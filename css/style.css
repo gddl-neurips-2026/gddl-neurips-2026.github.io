@@ -904,6 +904,92 @@ img {
     display: block;
 }
 
+.venue-transport {
+    margin-top: 1.5rem;
+}
+
+.venue-transport h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.transport-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.transport-badge {
+    display: inline-flex;
+    align-items: stretch;
+    border-radius: 6px;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    white-space: nowrap;
+}
+
+.transport-badge-rer,
+.transport-badge-metro,
+.transport-badge-tram {
+    padding: 0.35rem 0.45rem;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+}
+
+.transport-badge-line {
+    padding: 0.35rem 0.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+/* RER C — yellow */
+.rer-c { background: #FFCD00; }
+.rer-c .transport-badge-rer,
+.rer-c .transport-badge-line { color: #333; }
+
+/* RER E — purple */
+.rer-e { background: #C04191; }
+.rer-e .transport-badge-rer { background: rgba(0,0,0,0.15); }
+
+/* Metro Line 1 — amber yellow */
+.metro-1 { background: #F2A900; }
+.metro-1 .transport-badge-metro { background: rgba(0,0,0,0.15); color: #fff; }
+.metro-1 .transport-badge-line { color: #fff; }
+
+/* Tramway T3b — green */
+.tram-t3b { background: #82C341; }
+.tram-t3b .transport-badge-tram { background: rgba(0,0,0,0.15); }
+
+.venue-access-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.venue-access-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .venue-card {
         grid-template-columns: 1fr;
